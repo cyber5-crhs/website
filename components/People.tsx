@@ -1,4 +1,4 @@
-import styles from "@/styles/People.module.css";
+import styles from "@/styles/People.module.scss";
 import { Box, Flex, Text } from "@chakra-ui/react";
 
 export default function People() {
