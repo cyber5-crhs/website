@@ -7,7 +7,6 @@ import {
 } from '@chakra-ui/react';
 
 import Link from 'next/link';
-import Image from 'next/image';
 
 import styles from '@/styles/Home.module.scss';
 import People from '@/components/People';
@@ -48,9 +47,11 @@ function Header() {
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Header />
-      <People />
+    <main className={styles.wrapper}>
+      <div className={styles.main}>
+        <Header />
+        <People />
+      </div>
       <Footer />
     </main>
   );

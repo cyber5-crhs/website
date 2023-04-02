@@ -4,11 +4,11 @@ $spacing: 2ch;
 $spacing-sm: 1ch;
 
 .main {
+  padding: $page-padding;
+
   display: flex;
   flex-direction: column;
   gap: $spacing;
-  padding: $page-padding;
-  min-height: 100vh;
 }
 
 .header {
@@ -16,4 +16,13 @@ $spacing-sm: 1ch;
   flex-direction: column;
   align-items: center;
   gap: $spacing-sm;
+}
+
+// Keep the footer at the bottom of the page
+.wrapper {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
