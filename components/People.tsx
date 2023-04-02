@@ -23,7 +23,7 @@ export default function People() {
     <Flex className={styles.main}>
       <Text className={styles.sectionText}>Our team:</Text>
       {team.map((m) => (
-        <Text key={m}>{m}</Text>
+        <Text className={styles.name} key={m}>{m}</Text>
       ))}
       <Box height="16px"></Box>
       <Text className={styles.sectionText}>Our members:</Text>
