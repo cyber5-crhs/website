@@ -1,9 +1,8 @@
 .main {
-    flex-direction: column;
-    font-size: 18px;
+  flex-direction: column;
+  font-size: 18px;
 }
 
 .sectionText {
-    color: #FF002A;
-    margin-bottom: 8px;
-  }
+  color: #FF002A;
+}

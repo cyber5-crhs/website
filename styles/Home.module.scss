@@ -1,0 +1,19 @@
+$page-padding: 1.5rem;
+
+$spacing: 2ch;
+$spacing-sm: 1ch;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing;
+  padding: $page-padding;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-sm;
+}
