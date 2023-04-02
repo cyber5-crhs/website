@@ -47,12 +47,12 @@ function Header() {
 
 export default function Home() {
   return (
-    <main className={styles.wrapper}>
+    <div className={styles.wrapper}>
       <div className={styles.main}>
         <Header />
         <People />
       </div>
       <Footer />
-    </main>
+    </div>
   );
 }

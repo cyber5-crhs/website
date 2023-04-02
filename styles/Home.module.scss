@@ -4,6 +4,7 @@ $spacing: 2ch;
 $spacing-sm: 1ch;
 
 .main {
+  max-width: 800px;
   padding: $page-padding;
 
   display: flex;
@@ -14,7 +15,6 @@ $spacing-sm: 1ch;
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: $spacing-sm;
 }
 
@@ -25,4 +25,5 @@ $spacing-sm: 1ch;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
