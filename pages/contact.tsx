@@ -4,8 +4,6 @@ import {
   Text,
   Flex,
   Spacer,
-  ButtonGroup,
-  textDecoration,
 } from "@chakra-ui/react";
 
 import Link from "next/link";
