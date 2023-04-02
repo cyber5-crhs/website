@@ -52,7 +52,7 @@ function Header() {
         </Link>
         <br />
         <br />
-        Contact us in our <Link href="#"><RedUnderline><Red>Matrix space</Red></RedUnderline></Link> for a faster response.
+        Contact us in our <Link href="https://matrix.to/#/!OAvvLnxtvgCioPvRTp:projectsegfau.lt?via=projectsegfau.lt"><RedUnderline><Red>Matrix space</Red></RedUnderline></Link> for a faster response.
       </Text>
     </header>
   );

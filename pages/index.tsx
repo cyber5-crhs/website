@@ -31,7 +31,7 @@ function Header() {
         <Text as='b' fontSize='4xl'>cyber<Red>5</Red></Text>
         <Spacer />
         <ButtonGroup>
-          <Link href='#'><SiMatrix width='30px' height='30px' /></Link>
+          <Link href='https://matrix.to/#/!OAvvLnxtvgCioPvRTp:projectsegfau.lt?via=projectsegfau.lt'><SiMatrix width='30px' height='30px' /></Link>
         </ButtonGroup>
       </Flex>
       <Text fontSize='lg'>The <Red>Cybersecurity</Red> Club of Cinco Ranch High School</Text>
