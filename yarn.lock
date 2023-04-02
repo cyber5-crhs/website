@@ -1010,6 +1010,11 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@icons-pack/react-simple-icons@^7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-7.1.1.tgz#8b45e36a05ed5b490b8f646e4b81475b73ae641c"
+  integrity sha512-rqKuRx+o8zZ3Z6a1Y0lAKrlhRbhKusR3XhWOSMs68Tiz4si+erq+Ti6+ocW3Z5lbsAjPtmRLG+svwLttigcEcg==
+
 "@motionone/animation@^10.12.0":
   version "10.15.1"
   resolved "https://registry.yarnpkg.com/@motionone/animation/-/animation-10.15.1.tgz#4a85596c31cbc5100ae8eb8b34c459fb0ccf6807"
