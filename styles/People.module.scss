@@ -1,6 +1,8 @@
+$chakra-fontSizes-lg: 1.125rem;
+
 .main {
   flex-direction: column;
-  font-size: 18px;
+  font-size: $chakra-fontSizes-lg;
 }
 
 .sectionText {

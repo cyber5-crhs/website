@@ -14,7 +14,7 @@ interface Props {
 }
 
 function Red(props: Props) {
-  return <span style={{color: 'red'}}>
+  return <span style={{color: '#FF002A'}}>
     {props.children}
   </span>;
 }
@@ -30,9 +30,9 @@ function Header() {
           <a href="#">Matrix</a>
         </ButtonGroup>
       </Flex>
-      <Text>The <Red>Cybersecurity</Red> Club of Cinco Ranch High School</Text>
+      <Text fontSize='lg'>The <Red>Cybersecurity</Red> Club of Cinco Ranch High School</Text>
       <Spacer />
-      <Text>
+      <Text fontSize='lg'>
         We a group of cybersecurity enthusiasts that practice <Red>ethical hacking</Red>,
         host <Red>CTFs</Red>, and have fun together.
       </Text>
