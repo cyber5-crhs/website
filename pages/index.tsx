@@ -13,6 +13,7 @@ import styles from '@/styles/Home.module.scss';
 import People from '@/components/People';
 
 import { SiMatrix } from '@icons-pack/react-simple-icons'
+import Footer from "@/components/Footer";
 
 interface Props {
   children: ReactNode;
@@ -50,6 +51,7 @@ export default function Home() {
     <main className={styles.main}>
       <Header />
       <People />
+      <Footer />
     </main>
   );
 }
