@@ -15,25 +15,15 @@ interface Props {
   children: ReactNode;
 }
 
-interface IdProps {
-  id: string,
-  type: string,
-  children: ReactNode;
-}
-
 function Red(props: Props) {
   return <span style={{ color: "#FF002A" }}>{props.children}</span>;
-}
-
-function RedUnderline(props: Props) {
-  return <u style={{ textDecorationColor: "#FF002A" }}>{props.children}</u>;
 }
 
 function Header() {
   return (
     <header className={styles.header}>
       <Text as="b" fontSize="4xl">
-        join cyber<Red>5</Red>
+        join <Link href="/"><u>cyber<Red>5</Red></u></Link>
       </Text>
       <Spacer />
       <Text>Fill out this short application to join cyber<Red>5</Red>.</Text>
@@ -50,20 +40,17 @@ export default function Join() {
         <form action="/api/register" method="post" className={styles.form}>
           <div>
             <label htmlFor="name">Your name</label>
-            <br />
             <input id="name" className={styles.nameInput} name="name" placeholder="John Doe" required />
           </div>
 
           <div>
             <label htmlFor="matrix">Matrix User ID</label>
-            <br />
             <input id="matrix" className={styles.matrixInput} name="matrix" placeholder="@hi:example.org" required />
-            <Text fontSize="xs">A matrix account is required to join, here is a guide on signing up. However, you can leave this blank if you plan to make your account later.</Text>
+            <Text fontSize="s">A matrix account is required to join. However, you can leave this blank if you plan to make your account later.</Text>
           </div>
 
           <div>
             <label htmlFor="email">Email</label>
-            <br />
             <input id="email" className={styles.emailInput} name="email" type="email" placeholder="me@example.org" required />
           </div>
 
@@ -101,7 +88,7 @@ export default function Join() {
               <label htmlFor="i0">CTFs</label>
               <label htmlFor="i1">Cybersecurity Labs</label>
               <label htmlFor="i2">Penetration Testing</label>
-              <label htmlFor="i3">Sample text</label>
+              <label htmlFor="i3">Competitions</label>
             </div>
           </fieldset>
 

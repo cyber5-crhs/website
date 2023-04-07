@@ -32,11 +32,23 @@ $spacing-sm: 1ch;
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  // Text inputs
+  div > label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  div > p {
+    margin-top: 16px;
+  }
 }
 
 /* Form fields */
 
 // Only checkbox and inputs are in fieldsets
+.multi legend {
+  margin-bottom: 8px;
+}
 .multi div {
   display: flex;
   gap: 8px;
@@ -58,9 +70,14 @@ $spacing-sm: 1ch;
     border-radius: 10px;
 
     transition: background-color 0.25s, color 0.25s;
+    cursor: pointer;
+    user-select: none;
   }
 }
 
+.multi2 legend {
+  margin-bottom: 8px;
+}
 .multi2 div {
   display: flex;
   flex-direction: column;
@@ -77,6 +94,8 @@ $spacing-sm: 1ch;
     border-radius: 10px;
 
     transition: background-color 0.25s, color 0.25s;
+    cursor: pointer;
+    user-select: none;
   }
 }
 
