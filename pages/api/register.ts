@@ -7,12 +7,39 @@ type Data = {
   success: boolean
 }
 
+interface Interests {
+    ctf: boolean,
+    lab: boolean,
+    pentest: boolean,
+    competition: boolean,
+}
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
     const query = req.query;
-    const { name, matrix, email, grade, interest } = query;
+    const { name, matrix, email, grade, interest_ctf, interest_lab, interest_pentest, interest_competition } = query;
+    let interest: Interests = {
+        ctf: false,
+        lab: false,
+        pentest: false,
+        competition: false
+    };
+    
+    if (interest_ctf != undefined && interest_ctf != null) {
+        interest["ctf"] = true;
+    }
+    if (interest_lab != undefined && interest_lab != null) {
+        interest["lab"] = true;
+    }
+    if (interest_pentest != undefined && interest_pentest != null) {
+        interest["pentest"] = true;
+    }
+    if (interest_competition != undefined && interest_competition != null) {
+        interest["competition"] = true;
+    }
+    
     const { error } = await supabase
         .from('registration')
         .insert({ id: uuidv4(), name: name, matrix: matrix, grade: grade, interest: interest, email: email});
