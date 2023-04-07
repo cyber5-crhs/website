@@ -1,0 +1,29 @@
+$page-padding: 2.5rem;
+
+$spacing: 2ch;
+$spacing-sm: 1ch;
+
+.main {
+  max-width: 800px;
+  padding: $page-padding;
+
+  display: flex;
+  flex-direction: column;
+  gap: $spacing;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+}
+
+// Keep the footer at the bottom of the page
+.wrapper {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
