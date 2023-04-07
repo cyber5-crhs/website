@@ -1,14 +1,10 @@
 import { ReactNode } from "react";
 
-import {
-  Text,
-  Flex,
-  Spacer,
-} from "@chakra-ui/react";
+import { Text, Flex, Spacer } from "@chakra-ui/react";
 
 import Link from "next/link";
 
-import styles from "@/styles/Contact.module.scss";
+import styles from "@/styles/Success.module.scss";
 import Footer from "@/components/Footer";
 
 interface Props {
@@ -28,35 +24,28 @@ function Header() {
     <header className={styles.header}>
       <Flex minWidth="100%">
         <Text as="b" fontSize="4xl">
-          Contact
+          welcome
         </Text>
         <Spacer />
       </Flex>
       <Spacer />
       <Text fontSize="lg">
-        You can email us at{" "}
-        <Link href="mailto:sudoers@cyber5.club">
-          <RedUnderline>
-            <Red>sudoers@cyber5.club</Red>
-          </RedUnderline>
-        </Link>
+        {"{"} success: <Red>true</Red> {"}"}
         <br />
+      </Text>
+      {/* <Text fontSize="18px">We have received your application for cyber<Red>5</Red></Text> */}
+      <Text fontSize="lg">
+        <Red>Next steps:</Red></Text>
+        <Text fontSize="md">
+        1. Join the <Link href="https://matrix.to/#/!OAvvLnxtvgCioPvRTp:projectsegfau.lt?via=projectsegfau.lt"><RedUnderline><Red>matrix space</Red></RedUnderline><br/></Link>
+        2. Attend your first meeting (will be next August or September)
         <br />
-        Encrypt your email using our{" "}
-        <Link href="/pubkey.asc">
-          <RedUnderline>
-            <Red>PGP key</Red>
-          </RedUnderline>
-        </Link>
-        <br />
-        <br />
-        Contact us in our <Link href="https://matrix.to/#/!OAvvLnxtvgCioPvRTp:projectsegfau.lt?via=projectsegfau.lt"><RedUnderline><Red>Matrix space</Red></RedUnderline></Link> for a faster response.
       </Text>
     </header>
   );
 }
 
-export default function Contact() {
+export default function Success() {
   return (
     <main className={styles.wrapper}>
       <div className={styles.main}>
