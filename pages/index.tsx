@@ -40,7 +40,7 @@ function Header() {
         We a group of cybersecurity enthusiasts that practice <Red>ethical hacking</Red>,
         host <Red>CTFs</Red>, and have fun together.
       </Text>
-      <Link href="/join"><Text fontSize='18px' fontWeight='bold'><u>{'>>> Register for the club <<<'}</u></Text></Link>
+     <Link href="/join"><Text fontSize='18px' fontWeight='bold'><u>{'>>> Register for the club <<<'}</u></Text></Link>
     </header>
   );
 }
@@ -48,7 +48,6 @@ function Header() {
 export default function Home() {
   return (
     <div className={styles.wrapper}>
-      <input></input>
       <div className={styles.main}>
         <Header />
         <People />

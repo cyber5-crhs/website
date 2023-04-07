@@ -19,6 +19,10 @@ function Red(props: Props) {
   return <span style={{ color: "#FF002A" }}>{props.children}</span>;
 }
 
+function RedUnderline(props: Props) {
+  return <u style={{ textDecorationColor: "#FF002A" }}><Red>{props.children}</Red></u>;
+}
+
 function Header() {
   return (
     <header className={styles.header}>
@@ -46,7 +50,9 @@ export default function Join() {
           <div>
             <label htmlFor="matrix">Matrix User ID</label>
             <input id="matrix" className={styles.matrixInput} name="matrix" placeholder="@hi:example.org" required />
-            <Text fontSize="s">A matrix account is required to join. However, you can leave this blank if you plan to make your account later.</Text>
+            <Text fontSize="xs">
+              A matrix account is required to join. However, you can leave this blank if you plan to make your account later.
+              <Link href="/matrix"><RedUnderline>How to create an account?</RedUnderline></Link></Text>
           </div>
 
           <div>
@@ -88,7 +94,7 @@ export default function Join() {
               <label htmlFor="i0">CTFs</label>
               <label htmlFor="i1">Cybersecurity Labs</label>
               <label htmlFor="i2">Penetration Testing</label>
-              <label htmlFor="i3">Competitions</label>
+              <label htmlFor="i3">Cybersecurity Competitions</label>
             </div>
           </fieldset>
 
