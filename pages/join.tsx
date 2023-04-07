@@ -8,8 +8,9 @@ import {
 
 import Link from "next/link";
 
-import styles from "@/styles/Contact.module.scss";
+import styles from "@/styles/Join.module.scss";
 import Footer from "@/components/Footer";
+import { Field, Form, Formik } from "formik";
 
 interface Props {
   children: ReactNode;
@@ -28,35 +29,16 @@ function Header() {
     <header className={styles.header}>
       <Flex minWidth="100%">
         <Text as="b" fontSize="4xl">
-          Contact
+          Join us
         </Text>
         <Spacer />
       </Flex>
       <Spacer />
-      <Text fontSize="lg">
-        You can email us at{" "}
-        <Link href="mailto:sudoers@cyber5.club">
-          <RedUnderline>
-            <Red>sudoers@cyber5.club</Red>
-          </RedUnderline>
-        </Link>
-        <br />
-        <br />
-        Encrypt your email using our{" "}
-        <Link href="/pubkey.asc">
-          <RedUnderline>
-            <Red>PGP key</Red>
-          </RedUnderline>
-        </Link>
-        <br />
-        <br />
-        Contact us in our <Link href="https://matrix.to/#/!OAvvLnxtvgCioPvRTp:projectsegfau.lt?via=projectsegfau.lt"><RedUnderline><Red>Matrix space</Red></RedUnderline></Link> for a faster response.
-      </Text>
     </header>
   );
 }
 
-export default function Contact() {
+export default function Join() {
   return (
     <main className={styles.wrapper}>
       <div className={styles.main}>
