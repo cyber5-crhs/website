@@ -27,7 +27,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <Text as="b" fontSize="4xl">
-        join <Link href="/"><u>cyber<Red>5</Red></u></Link>
+        join <Link href="/"><u style={{ textDecorationColor: "#FF002A" }}>cyber<Red>5</Red></u></Link>
       </Text>
       <Spacer />
       <Text>Fill out this short application to join cyber<Red>5</Red>.</Text>
@@ -50,14 +50,13 @@ export default function Join() {
           <div>
             <label htmlFor="matrix">Matrix User ID</label>
             <input id="matrix" className={styles.matrixInput} name="matrix" placeholder="@hi:example.org" required />
-            <Text fontSize="xs">
-              A matrix account is required to join. However, you can leave this blank if you plan to make your account later.
-              <Link href="/matrix"><RedUnderline>How to create an account?</RedUnderline></Link></Text>
+            <Text fontSize="xs">A matrix account is required to join. However, you can leave this blank if you plan to make your account later. <Link href="/matrix"><RedUnderline>How to create an account?</RedUnderline></Link></Text>
           </div>
 
           <div>
             <label htmlFor="email">Email</label>
-            <input id="email" className={styles.emailInput} name="email" type="email" placeholder="me@example.org" required />
+            <input id="email" className={styles.emailInput} name="email" type="email" placeholder="hi@example.org" required />
+            <Text fontSize="xs">Don't worry, we won't spam you. We only require email so we can send club announcements to you in case you aren't active on the Matrix.</Text>
           </div>
 
           <fieldset className={styles.multi}>
@@ -78,7 +77,7 @@ export default function Join() {
               <label htmlFor="g4">*</label>
             </div>
 
-            <p>* Prefer not to answer</p>
+            <Text fontSize="xs">* Prefer not to answer</Text>
           </fieldset>
 
           <fieldset className={styles.multi2}>
@@ -92,9 +91,16 @@ export default function Join() {
               <input id="i3" name="interest_competition" type="checkbox" />
 
               <label htmlFor="i0">CTFs</label>
+              <Text fontSize="xs">A fun event where you compete with other teams to extract the most flags from </Text>
+
               <label htmlFor="i1">Cybersecurity Labs</label>
+              <Text fontSize="xs">Learn about cybersecurity vulnerabilities in a hands-on experience</Text>
+
               <label htmlFor="i2">Penetration Testing</label>
+              <Text fontSize="xs">Use your cybersecurity skills to find a vulnerability and break into a machine (for legal reasons, on a machine we own).</Text>
+
               <label htmlFor="i3">Cybersecurity Competitions</label>
+              <Text fontSize="xs">Participate in national competitions over cybersecurity</Text>
             </div>
           </fieldset>
 

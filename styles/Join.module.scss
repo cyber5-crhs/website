@@ -32,46 +32,55 @@ $spacing-sm: 1ch;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
 
-  // Text inputs
-  div > label {
+// Text inputs
+.form > div {
+  label {
     display: block;
     margin-bottom: 8px;
   }
-  div > p {
-    margin-top: 16px;
+  p {
+    margin-top: 8px;
   }
 }
 
 /* Form fields */
 
 // Only checkbox and inputs are in fieldsets
-.multi legend {
-  margin-bottom: 8px;
-}
-.multi div {
-  display: flex;
-  gap: 8px;
-
-  input {
-    display: none;
+.multi {
+  legend {
+    margin-bottom: 8px;
   }
 
-  label {
-    height: 40px;
-    width: 38px;
-    padding: 8px;
+  p {
+    margin-top: 8px;
+  }
 
+  div {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 8px;
 
-    border: 1px solid white;
-    border-radius: 10px;
+    input {
+      display: none;
+    }
 
-    transition: background-color 0.25s, color 0.25s;
-    cursor: pointer;
-    user-select: none;
+    label {
+      height: 40px;
+      width: 38px;
+      padding: 8px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: 1px solid white;
+      border-radius: 10px;
+
+      transition: background-color 0.25s, color 0.25s;
+      cursor: pointer;
+      user-select: none;
+    }
   }
 }
 
@@ -96,6 +105,10 @@ $spacing-sm: 1ch;
     transition: background-color 0.25s, color 0.25s;
     cursor: pointer;
     user-select: none;
+  }
+
+  p {
+    margin-bottom: 8px;
   }
 }
 
