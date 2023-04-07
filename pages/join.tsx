@@ -10,7 +10,6 @@ import Link from "next/link";
 
 import styles from "@/styles/Join.module.scss";
 import Footer from "@/components/Footer";
-import { Field, Form, Formik } from "formik";
 
 interface Props {
   children: ReactNode;
