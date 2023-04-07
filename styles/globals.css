@@ -2,3 +2,22 @@
   background-color: black;
   color: white;
 }
+
+#g0:checked ~ label[for=g0],
+#g1:checked ~ label[for=g1],
+#g2:checked ~ label[for=g2],
+#g3:checked ~ label[for=g3],
+#g4:checked ~ label[for=g4] {
+  background-color: #fff;
+  color: #000;
+}
+
+#i0:checked ~ label[for=i0],
+#i1:checked ~ label[for=i1],
+#i2:checked ~ label[for=i2],
+#i3:checked ~ label[for=i3],
+#i4:checked ~ label[for=i4] {
+  background-color: #fff;
+  color: #000;
+}
+

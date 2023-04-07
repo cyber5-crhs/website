@@ -4,18 +4,17 @@ $spacing: 2ch;
 $spacing-sm: 1ch;
 
 .main {
+  max-width: 800px;
   padding: $page-padding;
 
   display: flex;
   flex-direction: column;
   gap: $spacing;
-
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: $spacing-sm;
 }
 
@@ -27,4 +26,72 @@ $spacing-sm: 1ch;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Form fields */
+
+// Only checkbox and inputs are in fieldsets
+.multi div {
+  display: flex;
+  gap: 8px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    height: 40px;
+    width: 38px;
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid white;
+    border-radius: 10px;
+
+    transition: background-color 0.25s, color 0.25s;
+  }
+}
+
+.multi2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    padding: 8px;
+
+    border: 1px solid white;
+    border-radius: 10px;
+
+    transition: background-color 0.25s, color 0.25s;
+  }
+}
+
+// Text inputs
+.nameInput, .matrixInput, .emailInput {
+  background-color: #211921;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 8px;
+  width: 100%;
+}
+
+.submit {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #211921;
 }

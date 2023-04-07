@@ -11,15 +11,15 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-    const query = req.query;
-    const { name, matrix, email, grade, interest } = query;
+    const body = req.body;
+    const { name, matrix, email, grade, interest } = body;
     const { error } = await supabase
         .from('registration')
         .insert({ id: uuidv4(), name: name, matrix: matrix, grade: grade, interest: interest, email: email});
     if (error != null) {
-        res.status(500).json({ success: false })
+        res.status(500).json({ success: false });
         console.log(error);
     } else {
-        res.status(200).json({ success: true })
+        res.status(200).redirect("/success");
     }
 }
