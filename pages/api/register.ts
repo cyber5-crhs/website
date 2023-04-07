@@ -51,6 +51,6 @@ export default async function handler(
         res.status(500).json({ success: false });
         console.log(error);
     } else {
-        res.status(200).redirect("/success");
+        res.redirect(302, "/success");
     }
 }
