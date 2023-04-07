@@ -48,6 +48,7 @@ function Header() {
 export default function Home() {
   return (
     <div className={styles.wrapper}>
+      <input></input>
       <div className={styles.main}>
         <Header />
         <People />
