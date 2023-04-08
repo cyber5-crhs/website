@@ -56,7 +56,7 @@ export default function Join() {
           <div>
             <label htmlFor="email">Email</label>
             <input id="email" className={styles.emailInput} name="email" type="email" placeholder="hi@example.org" required />
-            <Text fontSize="xs">Don't worry, we won't spam you. We only require email so we can send club announcements to you in case you aren't active on the Matrix.</Text>
+            <Text fontSize="xs">Don&#39;t worry, we won&#39;t spam you. We only require email so we can send club announcements to you in case you aren&#39;t active on the Matrix.</Text>
           </div>
 
           <fieldset className={styles.multi}>
