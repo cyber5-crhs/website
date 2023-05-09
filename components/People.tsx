@@ -18,7 +18,9 @@ export default function People() {
     "Kevin",
     "Rohan",
     "Jacob",
-    "Jeydin"
+    "Jeydin",
+    "Andrew",
+    "John"
   ].sort();
 
   return (

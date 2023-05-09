@@ -40,7 +40,9 @@ function Header() {
         We a group of cybersecurity enthusiasts that practice <Red>ethical hacking</Red>,
         host <Red>CTFs</Red>, and have fun together.
       </Text>
+      <Text fontSize='18px' fontWeight='bold'>=============================</Text>
      <Link href="/join"><Text fontSize='18px' fontWeight='bold'><u>{'>>> Register for the club <<<'}</u></Text></Link>
+     <Text fontSize='18px' fontWeight='bold'>=============================</Text>
     </header>
   );
 }
