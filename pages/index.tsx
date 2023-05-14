@@ -37,7 +37,7 @@ function Header() {
       <Text fontSize='lg'>The <Red>Cybersecurity</Red> Club of Cinco Ranch High School</Text>
       <Spacer />
       <Text fontSize='lg'>
-        We a group of cybersecurity enthusiasts that practice <Red>ethical hacking</Red>,
+        We are a group of cybersecurity enthusiasts who practice <Red>ethical hacking</Red>,
         host <Red>CTFs</Red>, and have fun together.
       </Text>
     
