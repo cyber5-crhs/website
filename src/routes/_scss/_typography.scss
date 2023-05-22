@@ -1,0 +1,50 @@
+@use 'sass:math';
+
+@function scale-font($exponent) {
+  // Minor third scale
+  $scale: 1.200;
+
+  // Round to 2 decimals and return as rem
+  @return #{calc(round(math.pow($scale, $exponent) * 100) / 100)}rem;
+}
+
+// Page titles
+@mixin heading1 {
+  font-size: scale-font(5);
+  font-family: 'JetBrainsMono';
+  font-weight: 900;
+  color: $lightest;
+}
+
+// Section titles
+@mixin heading2 {
+  font-size: scale-font(3);
+  font-family: 'JetBrainsMono';
+  font-weight: 900;
+  color: $lightest;
+}
+
+// Text headers
+@mixin heading3($color: $lightest) {
+  font-size: scale-font(1);
+  font-family: 'JetBrainsMono';
+  font-weight: bold;
+  color: $color;
+}
+
+// Body text
+@mixin body {
+  font-size: 1rem;
+  font-family: 'Inter';
+  font-weight: normal;
+  color: $light;
+  line-height: 150%;
+}
+
+// 
+@mixin small {
+  font-size: scale-font(-1);
+  font-family: 'Inter';
+  font-weight: normal;
+  color: $light;
+}

@@ -1,0 +1,74 @@
+@use 'sass:color';
+
+@import '_scss/fonts';
+@import '_scss/colors';
+@import '_scss/typography';
+@import '_scss/spacing';
+
+body {
+  margin: 0;
+  background: $darkest;
+  color: $lightest;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  padding:
+    $spacing-l  // Top
+    $spacing-m  // Right
+    $spacing-s  // Bottom
+    $spacing-m; // Left
+}
+
+footer {
+  padding:
+    $spacing-s  // Vertical
+    $spacing-m; // Horizontal
+  border-top: 1pt solid $dark;
+}
+
+section {
+  margin: $spacing-s 0;
+}
+
+h1 {
+  @include heading1;
+}
+
+h2 {
+  @include heading2;
+}
+
+h3 {
+  @include heading3;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  @include body;
+}
+
+.small {
+  @include small;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: $primary;
+}
+
+a:hover {
+  color: color.scale($primary, $lightness: 25%);
+}
+
+b {
+  font-weight: inherit;
+  color: $primary;
+}
