@@ -1,9 +1,9 @@
 @use 'sass:color';
 
-@import '_scss/fonts';
-@import '_scss/colors';
-@import '_scss/typography';
-@import '_scss/spacing';
+@import '../styles/fonts';
+@import '../styles/colors';
+@import '../styles/typography';
+@import '../styles/values';
 
 body {
   margin: 0;
@@ -18,6 +18,10 @@ main {
     $spacing-m  // Right
     $spacing-s  // Bottom
     $spacing-m; // Left
+
+  & > h2 {
+    margin-top: $spacing-m;
+  }
 }
 
 footer {
@@ -51,6 +55,7 @@ h3 {
 
 p {
   @include body;
+  max-width: 70ch;
 }
 
 .small {

@@ -3,7 +3,7 @@
 </svelte:head>
 
 <header>
-  <h1>contact</h1>
+  <h1>contact <a href="/">↩︎</a></h1>
 </header>
 
 <p>Join our <a href="https://matrix.to/#/!OAvvLnxtvgCioPvRTp:projectsegfau.lt?via=projectsegfau.lt">Matrix</a> if you want a quick response from us. You should join anyways ;)</p>

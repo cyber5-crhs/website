@@ -1,0 +1,13 @@
+// Spacing
+
+$_base: 4pt;  // TODO: consider `px` instead
+
+$spacing-xxs: $_base;     // Between label icon and text
+$spacing-xs:  $_base * 2; // Padding in a card
+$spacing-s:   $_base * 4; // Between elements in a section
+$spacing-m:   $_base * 6; // Between sections
+$spacing-l:   $_base * 8; // Page padding
+
+// Border radius
+
+$radius:      8px;

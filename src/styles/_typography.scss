@@ -1,5 +1,8 @@
 @use 'sass:math';
 
+@import '../styles/fonts';
+@import '../styles/colors';
+
 @function scale-font($exponent) {
   // Minor third scale
   $scale: 1.200;
