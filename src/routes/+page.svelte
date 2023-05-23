@@ -48,7 +48,7 @@
 <section>
   <p>The <b>Cybersecurity Club</b> at Cinco Ranch High School.</p>
   <!-- <p>We are a group of cybersecurity enthusiasts who practice ethical hacking, host CTFs and have fun together.</p> -->
-  <p>We are a student-led club made up of cybersecurity enthusiasts. We practice ethical hacking, host CTFs and have fun together!</p>
+  <p>We are a student-led club made up of cybersecurity enthusiasts. We practice ethical hacking, host CTFs, and have fun together!</p>
   <a id="join-btn" href="/join">Ready to join? →</a> <!-- \u2192 -->
 </section>
 
