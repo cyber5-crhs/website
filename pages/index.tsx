@@ -99,7 +99,7 @@ export default function Home() {
                 fontSize='3xl'
                 className={jbmono.className}
               >
-                sample text
+                what do we not do?
               </Text>
 
               <Text
@@ -107,8 +107,9 @@ export default function Home() {
                 className={styles.desktopMaxW}
                 color='var(--color-text)'
               >
-                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-                sint cillum sint consectetur cupidatat.
+                We won&apos;t teach you how hack into <Red>the government</Red>, how to
+                <Red> break into</Red> Facebook accounts, or change your <Red>grades</Red>. We
+                especially don&apos;t wear <Red>Anonymous masks</Red> (maybe).
               </Text>
             </div>
           </Flex>
