@@ -4,28 +4,35 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "devlocal": "next dev -H 0.0.0.0 -p 5173",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "plint": "prettier --check .",
+    "format": "prettier --write ."
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.1.0",
     "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "@icons-pack/react-simple-icons": "^7.1.1",
+    "@icons-pack/react-simple-icons": "^8.0.1",
     "@supabase/supabase-js": "^2.14.0",
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.30",
-    "@types/react-dom": "18.0.11",
+    "@types/node": "20.4.8",
+    "@types/react": "18.2.19",
+    "@types/react-dom": "18.2.7",
     "@types/uuid": "^9.0.1",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
-    "framer-motion": "^6",
-    "next": "13.2.4",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.13",
+    "framer-motion": "^10.15.1",
+    "next": "13.4.13",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.60.0",
-    "typescript": "5.0.2",
+    "typescript": "5.1.6",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.1"
   }
 }

@@ -1,22 +1,29 @@
 $page-padding: 2.5rem;
 
-$spacing: 2ch;
-$spacing-sm: 1ch;
+$spacing: 2rem;
+$spacing-sm: 1rem;
+
+$max-width: 1250px;
 
 .main {
+  width: min(100%, $max-width);
   padding: $page-padding;
 
   display: flex;
   flex-direction: column;
   gap: $spacing;
-
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: $spacing-sm;
+
+  p {
+    max-width: 50em;
+    max-width: 80ch;
+  }
 }
 
 // Keep the footer at the bottom of the page

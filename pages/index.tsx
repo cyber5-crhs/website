@@ -1,47 +1,34 @@
-import { ReactNode } from 'react';
-
-import {
-  Text,
-  Flex, Spacer,
-  ButtonGroup,
-} from '@chakra-ui/react';
+import { Text, Flex, Spacer, ButtonGroup, Button } from '@chakra-ui/react';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 import Link from 'next/link';
 
 import styles from '@/styles/Home.module.scss';
 import People from '@/components/People';
 
-import { SiMatrix } from '@icons-pack/react-simple-icons'
+import { SiMatrix } from '@icons-pack/react-simple-icons';
 import Footer from '@/components/Footer';
-
-interface Props {
-  children: ReactNode;
-}
-
-function Red(props: Props) {
-  return <span style={{color: '#FF002A'}}>
-    {props.children}
-  </span>;
-}
+import { jbmono } from '@/lib/fonts';
+import { Red } from '@/components/Text';
 
 function Header() {
   return (
     <header className={styles.header}>
       <Flex alignItems='center' minWidth='100%'>
-        <Text as='b' fontSize='4xl'>cyber<Red>5</Red></Text>
+        <Text
+          fontWeight='extrabold'
+          fontSize='4xl'
+          className={jbmono.className}
+        >
+          cyber<Red>5</Red>
+        </Text>
         <Spacer />
         <ButtonGroup>
-          <Link href='https://matrix.to/#/!OAvvLnxtvgCioPvRTp:projectsegfau.lt?via=projectsegfau.lt'><SiMatrix width='30px' height='30px' /></Link>
+          <Link href='https://matrix.to/#/!OAvvLnxtvgCioPvRTp:projectsegfau.lt?via=projectsegfau.lt'>
+            <SiMatrix width='30px' height='30px' />
+          </Link>
         </ButtonGroup>
       </Flex>
-      <Text fontSize='lg'>The <Red>Cybersecurity</Red> Club of Cinco Ranch High School</Text>
-      <Spacer />
-      <Text fontSize='lg'>
-        We are a group of cybersecurity enthusiasts who practice <Red>ethical hacking</Red>,
-        host <Red>CTFs</Red>, and have fun together.
-      </Text>
-    
-     <Link href="/join"><Text fontSize='18px' fontWeight='bold'><u>{'>>> Register <<<'}</u></Text></Link>
     </header>
   );
 }
@@ -51,7 +38,83 @@ export default function Home() {
     <div className={styles.wrapper}>
       <div className={styles.main}>
         <Header />
-        <People />
+        <Flex direction='column' gap='32px' className={styles.flex}>
+          <Flex direction='column' gap='32px'>
+            <div>
+              <Text
+                fontWeight='extrabold'
+                fontSize='3xl'
+                className={`${jbmono.className} ${styles.desktopVisible}`}
+              >
+                who are we?
+              </Text>
+
+              <Text
+                fontSize='lg'
+                className={styles.desktopMaxW}
+                color='var(--color-text)'
+              >
+                We are a group of cybersecurity enthusiasts at{' '}
+                <Red>Cinco Ranch High School</Red> with the common goal of
+                learning more about the cyberspace every day.
+              </Text>
+
+              <br />
+
+              <Link href='/join'>
+                <Button
+                  w='100%'
+                  fontWeight={'normal'}
+                  background={'var(--color-accent)'}
+                  className={`${styles.desktopMaxW} ${styles.button}`}
+                >
+                  Join now&nbsp;
+                  <ArrowForwardIcon background={'none'} />
+                </Button>
+              </Link>
+            </div>
+            <div>
+              <Text
+                fontWeight='extrabold'
+                fontSize='3xl'
+                className={jbmono.className}
+              >
+                what do we do?
+              </Text>
+
+              <Text
+                fontSize='lg'
+                className={styles.desktopMaxW}
+                color='var(--color-text)'
+              >
+                We occasionally host <Red>Jeopardy CTFs</Red> and explore{' '}
+                <Red>hands-on labs</Red> over real cybersecurity incidents. When
+                we aren&apos;t doing that, we&apos;re discussing about almost
+                anything in our Matrix space.
+              </Text>
+            </div>
+            <div>
+              <Text
+                fontWeight='extrabold'
+                fontSize='3xl'
+                className={jbmono.className}
+              >
+                what do we not do?
+              </Text>
+
+              <Text
+                fontSize='lg'
+                className={styles.desktopMaxW}
+                color='var(--color-text)'
+              >
+                We won&apos;t teach you how hack into <Red>the government</Red>, how to
+                <Red> break into</Red> Facebook accounts, or change your <Red>grades</Red>. We
+                especially don&apos;t wear <Red>Anonymous masks</Red> (maybe).
+              </Text>
+            </div>
+          </Flex>
+          <People />
+        </Flex>
       </div>
       <Footer />
     </div>
