@@ -4,6 +4,8 @@ import { Text, Flex, Spacer } from '@chakra-ui/react';
 
 import Link from 'next/link';
 
+import Image from 'next/image';
+
 import styles from '@/styles/Matrix.module.scss';
 import Footer from '@/components/Footer';
 import { jbmono } from '@/lib/fonts';
@@ -40,8 +42,27 @@ function Header() {
       </Flex>
       <Spacer />
       <Text fontSize='lg' color='var(--color-text)'>
-        There are several reasons we avoid Discord.
+        There are several reasons why we avoid Discord, including several privacy
+        issues, and the requirement of a proprietary client.
       </Text>
+      <Text fontSize='lg' color='var(--color-text)'>
+        You can read an{' '}
+        <RedTextUnderline>
+          <a href='https://cadence.moe/blog/2020-06-06-why-you-shouldnt-trust-discord'>
+            article
+          </a>
+        </RedTextUnderline>{' '}
+        that explains some of Discord's issues.
+      </Text>
+      <Text fontSize='lg' color='var(--color-text)'>
+        That is why we opted to use Matrix, a secure, decentralized, and open-source messaging protocol.
+      </Text>
+      <Image
+        width='88'
+        height='31'
+        alt='A gif saying Discord, NO WAY!'
+        src='/assets/discord-no-way.gif'
+      />
       <Text
         fontWeight='extrabold'
         fontSize='3xl'
