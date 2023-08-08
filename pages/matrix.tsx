@@ -52,7 +52,7 @@ function Header() {
             article
           </a>
         </RedTextUnderline>{' '}
-        that explains some of Discord's issues.
+        that explains some of Discord&apos;s issues.
       </Text>
       <Text fontSize='lg' color='var(--color-text)'>
         That is why we opted to use Matrix, a secure, decentralized, and open-source messaging protocol.
@@ -117,7 +117,7 @@ function Header() {
         registering an account
       </Text>
       <Text fontSize='lg' color='var(--color-text)'>
-        Once you download your client, all that's left do is to register an
+        Once you download your client, all that&apos;s left do is to register an
         account.
       </Text>
       <Text fontSize='lg' color='var(--color-text)'>

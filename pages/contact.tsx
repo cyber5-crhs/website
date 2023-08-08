@@ -45,11 +45,11 @@ function Header() {
         <Link href='https://matrix.to/#/!OAvvLnxtvgCioPvRTp:projectsegfau.lt?via=projectsegfau.lt'>
           <RedTextUnderline>Matrix space</RedTextUnderline>
         </Link>{' '}
-        is our preferred method of communication. We're basically always active
+        is our preferred method of communication. We&apos;re basically always active
         here so you can expect a quick response.
       </Text>
       <Text fontSize='lg' color='var(--color-text)'>
-        If you don't already have a Matrix account, you should check our{' '}
+        If you don&apos;t already have a Matrix account, you should check our{' '}
         <Link href='/matrix'>
           <RedTextUnderline>guide</RedTextUnderline>
         </Link>{' '}
