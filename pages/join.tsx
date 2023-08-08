@@ -74,9 +74,9 @@ export default function Join() {
             <Text fontSize='xs' color='var(--color-text)'>
               A Matrix account is required to join. You can leave this field
               blank if you plan on making your account later.{' '}
-              <Link href='/matrix'>
+              <a href='/matrix' target='_blank' rel="noopener noreferrer">
                 <RedUnderline>How do I create an account?</RedUnderline>
-              </Link>
+              </a>
             </Text>
           </div>
 
