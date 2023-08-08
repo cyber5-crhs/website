@@ -1,10 +1,12 @@
 $page-padding: 2.5rem;
 
-$spacing: 2ch;
-$spacing-sm: 1ch;
+$spacing: 2rem;
+$spacing-sm: 1rem;
+
+$max-width: 1250px;
 
 .main {
-  max-width: 800px;
+  width: min(100%, $max-width);
   padding: $page-padding;
 
   display: flex;
@@ -16,6 +18,29 @@ $spacing-sm: 1ch;
   display: flex;
   flex-direction: column;
   gap: $spacing-sm;
+}
+
+@media (min-width: 800px) {
+  .flex {
+    flex-direction: row !important;
+
+    & > div {
+      flex: 1;
+    }
+  }
+
+  .desktopVisible {
+    display: block !important;
+  }
+}
+
+.desktopVisible {
+  display: none;
+}
+
+.desktopMaxW {
+  max-width: 90rem;
+  max-width: 45ch;
 }
 
 // Keep the footer at the bottom of the page

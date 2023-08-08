@@ -6,9 +6,27 @@ $chakra-fontSizes-lg: 1.125rem;
 }
 
 .sectionText {
-  color: #FF002A;
+  color: var(--color-accent);
 }
 
-.name {
-  white-space: pre;
+.card {
+  background-color: var(--color-bg-alt);
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 8px;
+
+  & > * {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: min(100%, 90rem) !important;
+    width: min(100%, 45ch) !important;
+  }
+
+  .wrapper {
+    justify-content: start !important;
+  }
 }

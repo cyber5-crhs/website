@@ -1,23 +1,39 @@
-* {
+:root {
+  --color-accent: #ff002a;
+  --color-hint: #777;
+  --color-bg-alt: #211921;
+}
+
+.body {
   background-color: black;
   color: white;
 }
 
-#g0:checked ~ label[for=g0],
-#g1:checked ~ label[for=g1],
-#g2:checked ~ label[for=g2],
-#g3:checked ~ label[for=g3],
-#g4:checked ~ label[for=g4] {
+#g0:checked + label,
+#g1:checked + label,
+#g2:checked + label,
+#g3:checked + label,
+#g4:checked + label,
+#i0:checked + label,
+#i1:checked + label,
+#i2:checked + label,
+#i3:checked + label,
+#i4:checked + label {
   background-color: #fff;
   color: #000;
 }
 
-#i0:checked ~ label[for=i0],
-#i1:checked ~ label[for=i1],
-#i2:checked ~ label[for=i2],
-#i3:checked ~ label[for=i3],
-#i4:checked ~ label[for=i4] {
-  background-color: #fff;
-  color: #000;
+#g0:focus + label,
+#g1:focus + label,
+#g2:focus + label,
+#g3:focus + label,
+#g4:focus + label,
+#i0:focus:not(:checked) + label,
+#i1:focus:not(:checked) + label,
+#i2:focus:not(:checked) + label,
+#i3:focus:not(:checked) + label,
+#i4:focus:not(:checked) + label {
+  color: white;
+  background-color: #211921;
+  border-width: 3px;
 }
-
