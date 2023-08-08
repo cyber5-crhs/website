@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { Text, Flex, Spacer } from '@chakra-ui/react';
+import { Text, Spacer } from '@chakra-ui/react';
 
 import Link from 'next/link';
 
@@ -35,7 +35,7 @@ function Header() {
         application
       </Text>
       <Spacer />
-      <Text>Let us know little about yourself!</Text>
+      <Text color='var(--color-text)'>Let us know little about yourself!</Text>
       <Spacer />
     </header>
   );
@@ -54,6 +54,7 @@ export default function Join() {
                 id='name'
                 className={styles.nameInput}
                 name='name'
+                placeholder='Kevin Mitnick'
                 required
               />
             </label>
@@ -70,7 +71,7 @@ export default function Join() {
                 required
               />
             </label>
-            <Text fontSize='xs'>
+            <Text fontSize='xs' color='var(--color-text)'>
               A Matrix account is required to join. You can leave this field
               blank if you plan on making your account later.{' '}
               <Link href='/matrix'>
@@ -91,7 +92,7 @@ export default function Join() {
                 required
               />
             </label>
-            <Text fontSize='xs'>
+            <Text fontSize='xs' color='var(--color-text)'>
               Don&#39;t worry, we won&#39;t spam you. We only require email so
               we can send club announcements to you in case you aren&#39;t
               active on the Matrix.
@@ -123,7 +124,9 @@ export default function Join() {
               <label htmlFor='g4'>*</label>
             </div>
 
-            <Text fontSize='xs'>* Prefer not to answer</Text>
+            <Text fontSize='xs' color='var(--color-text)'>
+              * Prefer not to answer
+            </Text>
           </fieldset>
 
           <hr />
@@ -135,28 +138,29 @@ export default function Join() {
             <div>
               <input id='i0' name='interest_ctf' type='checkbox' />
               <label htmlFor='i0'>CTFs</label>
-              <Text fontSize='xs'>
+              <Text fontSize='xs' color='var(--color-text)'>
                 An event where you compete with other teams win as many flags by
                 solving challenges.
               </Text>
 
               <input id='i1' name='interest_lab' type='checkbox' />
               <label htmlFor='i1'>Cybersecurity Labs</label>
-              <Text fontSize='xs'>
+              <Text fontSize='xs' color='var(--color-text)'>
                 Learn about cybersecurity vulnerabilities in a hands-on
                 experience.
               </Text>
 
               <input id='i2' name='interest_pentest' type='checkbox' />
               <label htmlFor='i2'>Penetration Testing</label>
-              <Text fontSize='xs'>
+              <Text fontSize='xs' color='var(--color-text)'>
                 Use your cybersecurity skills to find a vulnerability and break
-                into a machine or application (for legal reasons, on a machine we own).
+                into a machine or application (for legal reasons, on a machine
+                we own).
               </Text>
 
               <input id='i3' name='interest_competition' type='checkbox' />
               <label htmlFor='i3'>Cybersecurity Competitions</label>
-              <Text fontSize='xs'>
+              <Text fontSize='xs' color='var(--color-text)'>
                 Participate in local or national cybersecurity competitions.
               </Text>
             </div>

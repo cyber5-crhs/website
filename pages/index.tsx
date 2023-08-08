@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-
 import { Text, Flex, Spacer, ButtonGroup, Button } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 
@@ -46,14 +44,19 @@ export default function Home() {
               <Text
                 fontWeight='extrabold'
                 fontSize='3xl'
-                className={jbmono.className}
+                className={`${jbmono.className} ${styles.desktopVisible}`}
               >
                 who are we?
               </Text>
 
-              <Text fontSize='lg' className={styles.desktopMaxW}>
-                We are a group of cybersecurity enthusiasts with the common goal
-                of learning more about the cyberspace every day.
+              <Text
+                fontSize='lg'
+                className={styles.desktopMaxW}
+                color='var(--color-text)'
+              >
+                We are a group of cybersecurity enthusiasts at{' '}
+                <Red>Cinco Ranch High School</Red> with the common goal of
+                learning more about the cyberspace every day.
               </Text>
 
               <br />
@@ -79,10 +82,15 @@ export default function Home() {
                 what do we do?
               </Text>
 
-              <Text fontSize='lg' className={styles.desktopMaxW}>
-                We occasionally host Jeopardy CTFs and explore hands-on labs
-                over real cybersecurity incidents. When we don&apos;t do that,
-                we&apos;re discussing about almost anything in our Matrix space.
+              <Text
+                fontSize='lg'
+                className={styles.desktopMaxW}
+                color='var(--color-text)'
+              >
+                We occasionally host <Red>Jeopardy CTFs</Red> and explore{' '}
+                <Red>hands-on labs</Red> over real cybersecurity incidents. When
+                we aren&apos;t doing that, we&apos;re discussing about almost
+                anything in our Matrix space.
               </Text>
             </div>
             <div>
@@ -94,7 +102,11 @@ export default function Home() {
                 sample text
               </Text>
 
-              <Text fontSize='lg' className={styles.desktopMaxW}>
+              <Text
+                fontSize='lg'
+                className={styles.desktopMaxW}
+                color='var(--color-text)'
+              >
                 Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
                 sint cillum sint consectetur cupidatat.
               </Text>
@@ -104,6 +116,6 @@ export default function Home() {
         </Flex>
       </div>
       <Footer />
-    </div >
+    </div>
   );
 }

@@ -3,9 +3,11 @@ $page-padding: 2.5rem;
 $spacing: 2ch;
 $spacing-sm: 1ch;
 
+$max-width: 1250px;
+
 .main {
+  width: min(100%, $max-width);
   padding: $page-padding;
-  max-width: 800px;
   display: flex;
   flex-direction: column;
   gap: $spacing;

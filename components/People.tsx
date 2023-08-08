@@ -41,7 +41,11 @@ export default function People() {
           </Text>
 
           {team.map(([name, position]) => (
-            <Text className={styles.name} key={uuidv4()}>
+            <Text
+              className={styles.name}
+              key={uuidv4()}
+              color='var(--color-text)'
+            >
               {name} <Red>({position})</Red>
             </Text>
           ))}
@@ -55,7 +59,9 @@ export default function People() {
             our members
           </Text>
           {members.map((m) => (
-            <Text key={uuidv4()}>{m}</Text>
+            <Text key={uuidv4()} color='var(--color-text)'>
+              {m}
+            </Text>
           ))}
         </div>
       </Flex>

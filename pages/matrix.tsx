@@ -6,6 +6,8 @@ import Link from 'next/link';
 
 import styles from '@/styles/Matrix.module.scss';
 import Footer from '@/components/Footer';
+import { jbmono } from '@/lib/fonts';
+import { RedTextUnderline } from '@/components/Text';
 
 interface Props {
   children: ReactNode;
@@ -27,59 +29,107 @@ function Header() {
   return (
     <header className={styles.header}>
       <Flex minWidth='100%'>
-        <Text as='b' fontSize='4xl'>
+        <Text
+          fontWeight='extrabold'
+          fontSize='4xl'
+          className={jbmono.className}
+        >
           matrix
         </Text>
         <Spacer />
       </Flex>
       <Spacer />
-      <Text fontSize='lg'>
-        Matrix is a secure, decentralized network for communications, used by
-        cyber<Red>5</Red>
-        <br />
-        <br />
-        <Red>Account creation guide: </Red>
-        <br />
+      <Text fontSize='lg' color='var(--color-text)'>
+        There are several reasons we avoid Discord.
       </Text>
-      <Text fontSize='md'>
-        Making an account on the Matrix protocol is very easy. <br />
-        <br /> You first need to download a client. There are many clients
-        compatible with the Matrix Protocol, for mobile, desktop(Linux, MacOS,
-        Windows), web, and even Nintendo 3ds. <br />
-        <br />
-        We recommend these clients, but you can use any client you wish. <br />
-        <br />
-        Generally good:{' '}
+      <Text
+        fontWeight='extrabold'
+        fontSize='3xl'
+        className={jbmono.className}
+        mt='32px'
+      >
+        getting a client
+      </Text>
+      <Text fontSize='lg' color='var(--color-text)'>
+        The first thing you need to is download a client. There are many clients
+        compatible with the Matrix Protocol, for mobile, desktop (e.g. Linux,
+        FreeBSD, MacOS, Windows), web, and even Nintendo 3DS.
+      </Text>
+      <Text fontSize='lg' color='var(--color-text)'>
         <RedUnderline>
-          <Link href='https://element.io/download'>
+          <Link href='https://element.io'>
             <Red>Element</Red>
           </Link>
         </RedUnderline>{' '}
-        <br />
-        For mobile:{' '}
+        is a widely-used cross-platform client. Do you use Discord?{' '}
+        <Link href='https://matrix.org/ecosystem/clients/cinny'>
+          <RedTextUnderline>Cinny</RedTextUnderline>
+        </Link>{' '}
+        will feel like home. Other clients we recommend include{' '}
+        <RedUnderline>
+          <Link href='https://schildi.chat'>
+            <Red>SchildiChat</Red>
+          </Link>
+        </RedUnderline>{' '}
+        and{' '}
         <RedUnderline>
           <Red>
-            <Link href='https://fluffychat.im/'>FluffyChat</Link>
+            <Link href='https://fluffychat.im/'>FluffyChat (mobile)</Link>
           </Red>
-        </RedUnderline>{' '}
-        <br />
-        <br />
-        After you download your client, all is left is registering your account.
-        <br />
-        <br />
-        Matrix is decentralized, meaning there are multiple homeservers to make
-        your account on, these homeservers exchange messages with each other, so
-        you can talk to people on different homeservers. <br />
-        <br />
-        <RedUnderline>Matrix.org</RedUnderline> is a decent homeserver, but
-        there are others we recommend such as{' '}
-        <RedUnderline>projectsegfau.lt</RedUnderline>
-        <br /> <br />
-        Finally,{' '}
-        <Link href='https://matrix.to/#/!OAvvLnxtvgCioPvRTp:projectsegfau.lt?via=projectsegfau.lt'>
-          <RedUnderline>join our matrix space</RedUnderline>
+        </RedUnderline>
+        .
+      </Text>
+      <Text fontSize='lg' color='var(--color-text)'>
+        There exist a wide assortment of clients that you can pick from. You can
+        find a list of clients on the{' '}
+        <Link href='https://matrix.org/ecosystem/clients'>
+          <RedTextUnderline>matrix.org website</RedTextUnderline>
         </Link>
-        . Clicking the link should simply work.
+        .
+      </Text>
+      <Text
+        fontWeight='extrabold'
+        fontSize='3xl'
+        className={jbmono.className}
+        mt='32px'
+      >
+        registering an account
+      </Text>
+      <Text fontSize='lg' color='var(--color-text)'>
+        Once you download your client, all that's left do is to register an
+        account.
+      </Text>
+      <Text fontSize='lg' color='var(--color-text)'>
+        Matrix is decentralized, meaning that there are multiple homeservers you
+        can choose from to create your account. These homeservers exchange
+        messages with each other, so you can talk to people on different
+        homeservers.
+      </Text>
+      <Text fontSize='lg' color='var(--color-text)'>
+        <Link href='https://matrix.org'>
+          <RedUnderline>Matrix.org</RedUnderline>
+        </Link>{' '}
+        is a decent homeserver, but there are others we recommend such as{' '}
+        <Link href='https://envs.net'>
+          <RedUnderline>envs.net</RedUnderline>
+        </Link>
+        .
+      </Text>
+      <Text
+        fontWeight='extrabold'
+        fontSize='3xl'
+        className={jbmono.className}
+        mt='32px'
+      >
+        joining our space
+      </Text>
+      <Text fontSize='lg' color='var(--color-text)'>
+        Your last step: join our{' '}
+        <Link href='https://matrix.to/#/!OAvvLnxtvgCioPvRTp:projectsegfau.lt?via=projectsegfau.lt'>
+          <RedUnderline>Matrix space</RedUnderline>
+        </Link>
+        , which is the Matrix equivalent of a Discord server. Make sure to say
+        hi!
       </Text>
     </header>
   );
