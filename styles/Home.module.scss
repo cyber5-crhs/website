@@ -43,6 +43,10 @@ $max-width: 1250px;
   max-width: 45ch;
 }
 
+.button:hover {
+  background-color: darken(#ff002a, 10%) !important;
+}
+
 // Keep the footer at the bottom of the page
 .wrapper {
   min-height: 100vh;

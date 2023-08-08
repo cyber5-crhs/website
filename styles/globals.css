@@ -18,16 +18,16 @@
 #i1:checked + label,
 #i2:checked + label,
 #i3:checked + label,
-#i4:checked + label {
-  background-color: #fff;
-  color: #000;
-}
-
+#i4:checked + label,
 #g0:focus + label,
 #g1:focus + label,
 #g2:focus + label,
 #g3:focus + label,
-#g4:focus + label,
+#g4:focus + label {
+  background-color: #fff;
+  color: #000;
+}
+
 #i0:focus:not(:checked) + label,
 #i1:focus:not(:checked) + label,
 #i2:focus:not(:checked) + label,

@@ -63,7 +63,7 @@ export default function Home() {
                   w='100%'
                   fontWeight={'normal'}
                   background={'var(--color-accent)'}
-                  className={styles.desktopMaxW}
+                  className={`${styles.desktopMaxW} ${styles.button}`}
                 >
                   Join now&nbsp;
                   <ArrowForwardIcon background={'none'} />
@@ -104,6 +104,6 @@ export default function Home() {
         </Flex>
       </div>
       <Footer />
-    </div>
+    </div >
   );
 }

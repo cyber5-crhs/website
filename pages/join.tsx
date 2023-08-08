@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 import styles from '@/styles/Join.module.scss';
 import Footer from '@/components/Footer';
+import { jbmono } from '@/lib/fonts';
 
 interface Props {
   children: ReactNode;
@@ -30,13 +31,8 @@ function Hint(props: Props) {
 function Header() {
   return (
     <header className={styles.header}>
-      <Text as='b' fontSize='4xl'>
-        join{' '}
-        <Link href='/'>
-          <u style={{ textDecorationColor: 'var(--color-accent)' }}>
-            cyber<Red>5</Red>
-          </u>
-        </Link>
+      <Text fontWeight='extrabold' fontSize='4xl' className={jbmono.className}>
+        application
       </Text>
       <Spacer />
       <Text>Let us know little about yourself!</Text>
@@ -70,11 +66,11 @@ export default function Join() {
                 id='matrix'
                 className={styles.matrixInput}
                 name='matrix'
-                placeholder='@hi:example.org'
+                placeholder='@me:example.org'
                 required
               />
             </label>
-            <Text fontSize='s'>
+            <Text fontSize='xs'>
               A Matrix account is required to join. You can leave this field
               blank if you plan on making your account later.{' '}
               <Link href='/matrix'>
@@ -91,7 +87,7 @@ export default function Join() {
                 className={styles.emailInput}
                 name='email'
                 type='email'
-                placeholder='hi@example.org'
+                placeholder='me@example.org'
                 required
               />
             </label>
@@ -140,28 +136,28 @@ export default function Join() {
               <input id='i0' name='interest_ctf' type='checkbox' />
               <label htmlFor='i0'>CTFs</label>
               <Text fontSize='xs'>
-                A fun event where you compete with other teams to extract the
-                most flags from{' '}
+                An event where you compete with other teams win as many flags by
+                solving challenges.
               </Text>
 
               <input id='i1' name='interest_lab' type='checkbox' />
               <label htmlFor='i1'>Cybersecurity Labs</label>
               <Text fontSize='xs'>
                 Learn about cybersecurity vulnerabilities in a hands-on
-                experience
+                experience.
               </Text>
 
               <input id='i2' name='interest_pentest' type='checkbox' />
               <label htmlFor='i2'>Penetration Testing</label>
               <Text fontSize='xs'>
                 Use your cybersecurity skills to find a vulnerability and break
-                into a machine (for legal reasons, on a machine we own).
+                into a machine or application (for legal reasons, on a machine we own).
               </Text>
 
               <input id='i3' name='interest_competition' type='checkbox' />
               <label htmlFor='i3'>Cybersecurity Competitions</label>
               <Text fontSize='xs'>
-                Participate in national competitions over cybersecurity
+                Participate in local or national cybersecurity competitions.
               </Text>
             </div>
           </fieldset>
