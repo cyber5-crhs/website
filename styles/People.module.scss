@@ -10,17 +10,19 @@ $chakra-fontSizes-lg: 1.125rem;
 }
 
 .card {
-  background-color: var(--color-bg-alt);
+  background-color: darken(#211921, 3%);
   padding: 1rem;
   border: 1px solid white;
   border-radius: 8px;
+
+  height: fit-content;
 
   & > * {
     width: fit-content;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 799px) {
   .card {
     width: min(100%, 90rem) !important;
     width: min(100%, 45ch) !important;

@@ -20,6 +20,25 @@ $max-width: 1250px;
   gap: $spacing-sm;
 }
 
+.buttonLink {
+  width: 100% !important;
+  display: block;
+}
+
+.button {
+  min-width: 100%;
+
+  &:hover {
+    background-color: darken(#ff002a, 10%) !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .button {
+    min-width: 100% !important;
+  }
+}
+
 @media (min-width: 800px) {
   .flex {
     flex-direction: row !important;
@@ -43,8 +62,10 @@ $max-width: 1250px;
   max-width: 45ch;
 }
 
-.button:hover {
-  background-color: darken(#ff002a, 10%) !important;
+@media (min-width: 551px) {
+  .button {
+    min-width: 50% !important;
+  }
 }
 
 // Keep the footer at the bottom of the page

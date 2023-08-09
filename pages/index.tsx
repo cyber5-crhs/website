@@ -61,10 +61,10 @@ export default function Home() {
 
               <br />
 
-              <Link href='/join'>
+              <Link href='/join' className={styles.buttonLink}>
                 <Button
-                  w='100%'
                   fontWeight={'normal'}
+                  color={'black'}
                   background={'var(--color-accent)'}
                   className={`${styles.desktopMaxW} ${styles.button}`}
                 >

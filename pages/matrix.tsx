@@ -93,11 +93,13 @@ function Header() {
           </Link>
         </RedUnderline>{' '}
         and{' '}
-        <RedUnderline>
-          <Red>
-            <Link href='https://fluffychat.im/'>FluffyChat (mobile)</Link>
-          </Red>
-        </RedUnderline>
+        <Link href='https://fluffychat.im/'>
+          <RedUnderline>
+            <Red>
+              FluffyChat (mobile)
+            </Red>
+          </RedUnderline>
+        </Link>
         .
       </Text>
       <Text fontSize='lg' color='var(--color-text)'>

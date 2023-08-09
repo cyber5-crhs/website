@@ -2,9 +2,10 @@ $page-padding: 2.5rem;
 
 $spacing: 2ch;
 $spacing-sm: 1ch;
+$max-width: 1250px;
 
 .main {
-  max-width: 800px;
+  width: min(100%, $max-width);
   padding: $page-padding;
 
   display: flex;
@@ -16,6 +17,17 @@ $spacing-sm: 1ch;
   display: flex;
   flex-direction: column;
   gap: $spacing-sm;
+}
+
+.todo {
+  list-style-position: inside;
+
+  & > li {
+    color: var(--color-text);
+    & > p {
+      display: inline-block;
+    }
+  }
 }
 
 // Keep the footer at the bottom of the page
