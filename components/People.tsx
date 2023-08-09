@@ -56,7 +56,7 @@ export default function People() {
             fontSize='3xl'
             className={jbmono.className}
           >
-            our members
+            members
           </Text>
           {members.map((m) => (
             <Text key={uuidv4()} color='var(--color-text)'>
