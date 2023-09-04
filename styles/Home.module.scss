@@ -20,6 +20,13 @@ $max-width: 1250px;
   gap: $spacing-sm;
 }
 
+.banner {
+  background: #ff002a;
+  width: 100%;
+  color: black;
+  padding: 0.5rem 1rem;
+}
+
 .buttonLink {
   width: 100% !important;
   display: block;

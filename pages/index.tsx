@@ -34,8 +34,15 @@ function Header() {
 }
 
 export default function Home() {
+  const number = 0;
+  const date   = "sept 06";
+  const time   = "14:50";
+  
   return (
     <div className={styles.wrapper}>
+      <div className={styles.banner}>
+        meeting{number} - {date} T{time} CST @ room 1625
+      </div>
       <div className={styles.main}>
         <Header />
         <Flex direction='column' gap='32px' className={styles.flex}>
