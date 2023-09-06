@@ -34,15 +34,19 @@ function Header() {
 }
 
 export default function Home() {
-  const number = 0;
-  const date   = "sept 06";
-  const time   = "14:50";
-  
+  // Change this to set banner
+  const announcement = false; // enable the banner 
+  const number = 0; // meeting number 
+  const date = 'sept 06'; // meeting date
+  const time = '14:50'; // meeting time
+
   return (
     <div className={styles.wrapper}>
-      <div className={styles.banner}>
-        meeting{number} - {date} T{time} CST @ room 1625
-      </div>
+      {announcement && (
+        <div className={styles.banner}>
+          meeting{number} - {date} T{time} CST @ room 1625
+        </div>
+      )}
       <div className={styles.main}>
         <Header />
         <Flex direction='column' gap='32px' className={styles.flex}>
@@ -114,9 +118,11 @@ export default function Home() {
                 className={styles.desktopMaxW}
                 color='var(--color-text)'
               >
-                We won&apos;t teach you how hack into <Red>the government</Red>, how to
-                <Red> break into</Red> Facebook accounts, or change your <Red>grades</Red>. We
-                especially don&apos;t wear <Red>Anonymous masks</Red> (maybe).
+                We won&apos;t teach you how hack into <Red>the government</Red>,
+                how to
+                <Red> break into</Red> Facebook accounts, or change your{' '}
+                <Red>grades</Red>. We especially don&apos;t wear{' '}
+                <Red>Anonymous masks</Red> (maybe).
               </Text>
             </div>
           </Flex>
