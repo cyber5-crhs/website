@@ -1,4 +1,11 @@
-import { Text, Flex, Spacer, ButtonGroup, Button } from '@chakra-ui/react';
+import {
+  Text,
+  Flex,
+  Spacer,
+  ButtonGroup,
+  Button,
+  Center,
+} from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 import Link from 'next/link';
@@ -35,16 +42,16 @@ function Header() {
 
 export default function Home() {
   // Change this to set banner
-  const announcement = true; // enable the banner 
-  const number = 1; // meeting number 
-  const date = 'sept 20'; // meeting date
+  const announcement = true; // enable the banner
+  const number = 1; // meeting number
+  const date = 'sept 27'; // meeting date
   const time = '14:50'; // meeting time
 
   return (
     <div className={styles.wrapper}>
       {announcement && (
         <div className={styles.banner}>
-          meeting{number} - {date} T{time} CST @ room 1625
+          meeting{number} <b style={{fontWeight: 'bolder'}}>rescheduled</b> - {date} T{time} CST @ room 1625<br/>
         </div>
       )}
       <div className={styles.main}>
