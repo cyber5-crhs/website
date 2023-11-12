@@ -9,13 +9,14 @@ export default function People() {
   let team = [
     ['Alex', 'Co-President'],
     ['Joey', 'Co-President'],
-    ['Grace', 'Marketing Officer'],
+    ['Bernardo', 'Marketing Officer'],
   ];
   let members = [
     'Amanda',
     'Bernardo',
     'Billy',
     'Taniel',
+    'Max W.',
     'Max',
     'Lakshay',
     'Kevin',
@@ -24,6 +25,8 @@ export default function People() {
     'Jeydin',
     'Andrew',
     'John',
+    'Hudson',
+    'Anh'
   ].sort();
 
   return (
