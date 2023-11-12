@@ -51,7 +51,7 @@ export default function Home() {
     <div className={styles.wrapper}>
       {announcement && (
         <div className={styles.banner}>
-          meeting{number} <b style={{fontWeight: 'bolder'}}>rescheduled</b> - {date} T{time} CST @ room 1625<br/>
+          meeting{number} - {date} T{time} CST @ room 1625<br/>
         </div>
       )}
       <div className={styles.main}>
