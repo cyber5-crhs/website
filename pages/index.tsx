@@ -42,9 +42,9 @@ function Header() {
 
 export default function Home() {
   // Change this to set banner
-  const announcement = false; // enable the banner
-  const number = 4; // meeting number
-  const date = 'nov 15'; // meeting date
+  const announcement = true; // enable the banner
+  const number = 5; // meeting number
+  const date = 'nov 29'; // meeting date
   const time = '14:50'; // meeting time
 
   return (
