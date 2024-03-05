@@ -44,7 +44,7 @@ export default function Home() {
   // Change this to set banner
   const announcement = true; // enable the banner
   const number = 5; // meeting number
-  const date = 'nov 29'; // meeting date
+  const date = 'march 6'; // meeting date
   const time = '14:50'; // meeting time
 
   return (
