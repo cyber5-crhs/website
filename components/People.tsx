@@ -7,26 +7,13 @@ import { jbmono } from '@/lib/fonts';
 
 export default function People() {
   let team = [
-    ['Alex', 'Co-President'],
-    ['Joey', 'Co-President'],
-    ['Bernardo', 'Marketing Officer'],
+    ['Alex P', 'Co-President'],
+    ['Joey L', 'Co-President'],
+    ['Bernardo G', 'Community Manager'],
+    ['Taniel L', 'Marketing Officer'],
+    ['Max W', 'Establishment Officer'],
   ];
   let members = [
-    'Amanda',
-    'Bernardo',
-    'Billy',
-    'Taniel',
-    'Max W.',
-    'Max',
-    'Lakshay',
-    'Kevin',
-    'Rohan',
-    'Jacob',
-    'Jeydin',
-    'Andrew',
-    'John',
-    'Hudson',
-    'Anh'
   ].sort();
 
   return (
@@ -53,20 +40,20 @@ export default function People() {
             </Text>
           ))}
         </div>
-        <div>
-          <Text
-            fontWeight='extrabold'
-            fontSize='3xl'
-            className={jbmono.className}
-          >
-            members
-          </Text>
-          {members.map((m) => (
-            <Text key={uuidv4()} color='var(--color-text)'>
-              {m}
-            </Text>
-          ))}
-        </div>
+        {/* <div> */}
+        {/*   <Text */}
+        {/*     fontWeight='extrabold' */}
+        {/*     fontSize='3xl' */}
+        {/*     className={jbmono.className} */}
+        {/*   > */}
+        {/*     members */}
+        {/*   </Text> */}
+        {/*   {members.map((m) => ( */}
+        {/*     <Text key={uuidv4()} color='var(--color-text)'> */}
+        {/*       {m} */}
+        {/*     </Text> */}
+        {/*   ))} */}
+        {/* </div> */}
       </Flex>
     </Flex>
   );
